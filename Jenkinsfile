@@ -6,7 +6,7 @@ pipeline {
       // One or more steps need to be included within the steps block.
       echo "Building .."
       withMaven(maven: 'maven') {
-        sh 'mvn -X clean install'
+        sh 'mvn compile'
       }
     }
   }
